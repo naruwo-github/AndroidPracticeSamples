@@ -2,4 +2,5 @@
     <string name="app_name">Sample App1</string>
     <string name="hello">ちわ！アンドロイド</string>
     <string name="tap_here">ここをタップ！</string>
+    <string name="image">stanImage</string>
 </resources>

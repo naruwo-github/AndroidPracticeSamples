@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">SampleBodySize</string>
     <string name="save_button">保存</string>
+    <string name="top_left_label">身長</string>
 </resources>

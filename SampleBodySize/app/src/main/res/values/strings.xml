@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SampleBodySize</string>
+    <string name="save_button">保存</string>
 </resources>

@@ -3,7 +3,9 @@ package com.example.samplejanken
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.preference.PreferenceManager
 import android.view.View
+import androidx.core.content.edit
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -15,11 +17,15 @@ class MainActivity : AppCompatActivity() {
         gu.setOnClickListener { onJankenButtonTapped(it) }
         choki.setOnClickListener { onJankenButtonTapped(it) }
         pa.setOnClickListener { onJankenButtonTapped(it) }
+
+        val pref = PreferenceManager.getDefaultSharedPreferences(this)
+        val editor = pref.edit()
+        editor.clear()
     }
 
     fun onJankenButtonTapped(view: View?) {
         val intent = Intent(this, ResultActivity::class.java)
-        intent.putExtra("My_HAND", view?.id)
+        intent.putExtra("MY_HAND", view?.id)
         startActivity(intent)
     }
 }

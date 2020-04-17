@@ -2,8 +2,10 @@ package com.example.samplebodysize
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.preference.PreferenceManager
 import android.view.View
 import android.widget.AdapterView
+import android.widget.SeekBar
 import android.widget.Spinner
 import kotlinx.android.synthetic.main.activity_height.*
 
@@ -31,5 +33,37 @@ class HeightActivity : AppCompatActivity() {
                 override fun onNothingSelected(parent: AdapterView<*>?) {
                 }
             }
+
+        val pref = PreferenceManager.getDefaultSharedPreferences(this)
+        val heightVal = pref.getInt("HEIGHT", 160)
+        height.text = heightVal.toString()
+        seekBar.progress = heightVal
+
+        //バーの設定
+        seekBar.setOnSeekBarChangeListener(
+            object : SeekBar.OnSeekBarChangeListener {
+                override fun onProgressChanged(
+                    seekBar: SeekBar?,
+                    progress: Int,
+                    fromUser: Boolean
+                ) {
+                    height.text = progress.toString()
+                }
+
+                override fun onStartTrackingTouch(seekBar: SeekBar?) {
+                }
+
+                override fun onStopTrackingTouch(seekBar: SeekBar?) {
+                }
+
+            }
+        )
+
+    }
+
+    override fun onPause() {
+        super.onPause()
+        val pref = PreferenceManager.getDefaultSharedPreferences(this)
+        pref.edit().putInt("HEIGHT", height.text.toString().toInt())
     }
 }

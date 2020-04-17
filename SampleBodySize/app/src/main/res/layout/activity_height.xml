@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
-        android:text="TextView"
+        android:text="@string/height_num_label"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,4 +38,55 @@
         android:entries="@array/txt_height_arr"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/height" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:max="200"
+        android:progress="160"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar">
+
+        <RadioButton
+            android:id="@+id/height1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/height1" />
+
+        <RadioButton
+            android:id="@+id/height2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/height2" />
+
+        <RadioButton
+            android:id="@+id/height3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/height3" />
+
+        <RadioButton
+            android:id="@+id/height4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/height4" />
+    </RadioGroup>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

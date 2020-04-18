@@ -1,5 +1,6 @@
 ## ジャンケンアプリ!
-<img src="src/ジャンケン画面.png" width="300px"> <img src="src/結果画像.png" width="300px">
+<img src="src/ジャンケン画面.png" width="300px"> <img src="src/結果画面.png" width="300px">
+
 こんな感じです。
 
 ### 学んだこと

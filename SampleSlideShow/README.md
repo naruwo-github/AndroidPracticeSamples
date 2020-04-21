@@ -11,3 +11,8 @@ PageAdapterクラスと一緒に使うのが普通(ViewPagerはページの表�
 
 #### ViewPagerは必要なページをPageAdapterにリクエストし、PageAdapterはページの生成を行ったあと、それをリターンします。
 
+### 音楽の再生を行う
+SoundPoolクラス
+
+MediaPlayerクラス(このアプリではこっちを使っている)
+

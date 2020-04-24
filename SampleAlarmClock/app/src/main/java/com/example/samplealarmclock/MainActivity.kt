@@ -7,13 +7,35 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), TimeAlertDialog.Listener {
+    override fun getUp() {
+//        Toast.makeText(this, "起きるがクリックされました", Toast.LENGTH_SHORT)
+//            .show()
+        finish()
+    }
+
+    override fun snooze() {
+//        Toast.makeText(this, "あと5分がクリックされました", Toast.LENGTH_SHORT)
+//            .show()
+        val calendar = Calendar.getInstance()
+        calendar.timeInMillis = System.currentTimeMillis()
+        calendar.add(Calendar.MINUTE, 5)
+        setAlarmManager(calendar)
+        finish()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        if (intent?.getBooleanExtra("onReceive", false) == true) {
+            val dialog = TimeAlertDialog()
+            dialog.show(supportFragmentManager, "alert_dialog")
+        }
+
         setContentView(R.layout.activity_main)
 
         setAlarm.setOnClickListener {

@@ -3,8 +3,8 @@
 
 また、画面長押しで出るコンテキストメニューから様々な操作を行うことができます。
 <img src="src/画面１.png" width="300px">  <img src="src/画面２.png" width="300px">
-<img src="src/画面３.png" width="300px">  <img src="src/画面４.png" width="300px">
 
+<img src="src/画面３.png" width="300px">  <img src="src/画面４.png" width="300px">
 
 
 ### HTMLや画像を準備する
@@ -34,4 +34,14 @@ vectorDrawables.useSupportLibrary = true
 
 
 ### 暗黙インテントを使う
+アクティビティを起動する時のインテントは、「明示的インテント」。起動したいクラスを指定しないで、起動したい機能だけ指定し、Androidシステムによって起動するアプリを判断させるインテントを、「暗黙的インテント」という。
 
+##### デフォルトで定義済みのアクション(一部)
+|定数名|意味|
+|----|----|
+|Intent.ACTION_CALL|電話をかける。|
+|Intent.ACTION_VIEW|データを表示する。|
+|Intent.ACTION_EDIT|データを編集する。|
+|Intent.ACTION_SYNC|端末上のデータをサーバー上のデータと同期する。|
+|Intent.ACTION_SEND|データを配信する。|
+などなど。。。

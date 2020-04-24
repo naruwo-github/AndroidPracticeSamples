@@ -1,12 +1,14 @@
 package com.example.samplealarmclock
 
 import android.app.AlarmManager
+import android.app.KeyguardManager
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.WindowManager.LayoutParams.*
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import java.lang.IllegalArgumentException
@@ -20,11 +22,11 @@ class MainActivity : AppCompatActivity(), TimeAlertDialog.Listener, DatePickerFr
     override fun onSelected(year: Int, month: Int, date: Int) {
         val c = Calendar.getInstance()
         c.set(year, month, date)
-        dateText.text = android.text.format.DateFormat.format("YYYY/MM/dd", c)
+        dateText.text = android.text.format.DateFormat.format("yyyy/MM/dd", c)
     }
 
     override fun onSelected(hourOfDay: Int, minute: Int) {
-        timeText.text = "%1$02d:%2$02D".format(hourOfDay, minute)
+        timeText.text = "%1$02d:%2$02d".format(hourOfDay, minute)
     }
 
     override fun getUp() {
@@ -46,7 +48,25 @@ class MainActivity : AppCompatActivity(), TimeAlertDialog.Listener, DatePickerFr
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        //スリープを解除して画面を表示する処理
+        //バージョンによって記述方法が違うのでこうなっている
         if (intent?.getBooleanExtra("onReceive", false) == true) {
+            when {
+                Build.VERSION.SDK_INT >= Build.VERSION_CODES.O_MR1 -> {
+                    setShowWhenLocked(true)
+                    setTurnScreenOn(true)
+                    val keyguardManager = getSystemService(Context.KEYGUARD_SERVICE) as KeyguardManager
+                    keyguardManager.requestDismissKeyguard(this, null)
+                }
+                Build.VERSION.SDK_INT >= Build.VERSION_CODES.O -> {
+                    window.addFlags(FLAG_TURN_SCREEN_ON or FLAG_SHOW_WHEN_LOCKED)
+                    val keyguardManager = getSystemService(Context.KEYGUARD_SERVICE) as KeyguardManager
+                    keyguardManager.requestDismissKeyguard(this, null)
+                }
+                else -> {
+                    window.addFlags(FLAG_TURN_SCREEN_ON or FLAG_DISMISS_KEYGUARD)
+                }
+            }
             val dialog = TimeAlertDialog()
             dialog.show(supportFragmentManager, "alert_dialog")
         }

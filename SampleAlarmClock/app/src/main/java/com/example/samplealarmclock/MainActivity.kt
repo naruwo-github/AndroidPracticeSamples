@@ -19,6 +19,7 @@ import java.util.*
 import java.util.regex.Pattern
 
 class MainActivity : AppCompatActivity(), TimeAlertDialog.Listener, DatePickerFragment.OnDateSelectedListener, TimePickerFragment.OnTimeSelectedListener {
+
     override fun onSelected(year: Int, month: Int, date: Int) {
         val c = Calendar.getInstance()
         c.set(year, month, date)
@@ -30,14 +31,10 @@ class MainActivity : AppCompatActivity(), TimeAlertDialog.Listener, DatePickerFr
     }
 
     override fun getUp() {
-//        Toast.makeText(this, "起きるがクリックされました", Toast.LENGTH_SHORT)
-//            .show()
         finish()
     }
 
     override fun snooze() {
-//        Toast.makeText(this, "あと5分がクリックされました", Toast.LENGTH_SHORT)
-//            .show()
         val calendar = Calendar.getInstance()
         calendar.timeInMillis = System.currentTimeMillis()
         calendar.add(Calendar.MINUTE, 5)
@@ -139,7 +136,7 @@ class MainActivity : AppCompatActivity(), TimeAlertDialog.Listener, DatePickerFr
 
     //String型の拡張関数
     //拡張関数内部では、thisで拡張するオブジェクトを参照できる
-    private fun String.toDate(pattern: String = "YYYY/DD/dd HH:mm"): Date? {
+    private fun String.toDate(pattern: String = "yyyy/MM/dd HH:mm"): Date? {
         return try {
             SimpleDateFormat(pattern).parse(this)
         } catch (e: IllegalArgumentException) {

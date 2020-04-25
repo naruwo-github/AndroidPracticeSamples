@@ -9,4 +9,10 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="date_textview_text">"日付 : "</string>
+    <string name="title_text_view_text">"タイトル : "</string>
+    <string name="detail_text_view_text" />
+    <string name="detail_text">"詳細 : "</string>
+    <string name="save_text">保存</string>
+    <string name="delete_text">削除</string>
 </resources>

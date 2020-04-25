@@ -2,6 +2,7 @@ package com.example.samplescheduler
 
 import android.text.format.DateFormat
 import android.view.LayoutInflater
+import android.view.OrientationEventListener
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
@@ -10,6 +11,12 @@ import io.realm.OrderedRealmCollection
 import io.realm.RealmRecyclerViewAdapter
 
 class SchedulerAdapter(data: OrderedRealmCollection<Schedule>) : RealmRecyclerViewAdapter<Schedule, SchedulerAdapter.ViewHolder>(data, true) {
+
+    private var listener: ((Long?) -> Unit)? = null
+
+    fun setOnItemClickedListener(listener: (Long?) -> Unit) {
+        this.listener = listener
+    }
 
     init {
         //これをtrueにし、getItemIdでidを返すようにすることで、RecyclerViewを高速で描画できるようになる
@@ -35,6 +42,9 @@ class SchedulerAdapter(data: OrderedRealmCollection<Schedule>) : RealmRecyclerVi
         val schedule: Schedule? = getItem(position)
         holder.date.text = DateFormat.format("yyyy/MM/dd", schedule?.date)
         holder.title.text = schedule?.title
+        holder.itemView.setOnClickListener {
+            listener?.invoke(schedule?.id)
+        }
     }
 
     override fun getItemId(position: Int): Long {

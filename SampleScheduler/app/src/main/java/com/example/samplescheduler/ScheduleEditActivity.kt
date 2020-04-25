@@ -23,17 +23,60 @@ class ScheduleEditActivity : AppCompatActivity() {
 
         realm = Realm.getDefaultInstance()
 
+        val scheduleId = intent?.getLongExtra("schedule_id", -1L)
+        if (scheduleId != -1L) {
+            val schedule = realm.where<Schedule>()
+                .equalTo("id", scheduleId).findFirst()
+            dateEdit.setText((android.text.format.DateFormat.format("yyyy/MM/dd", schedule?.date)))
+            titleEdit.setText(schedule?.title)
+            detailEdit.setText(schedule?.detail)
+            delete.visibility = View.VISIBLE
+        } else {
+            delete.visibility = View.INVISIBLE
+        }
+
         save.setOnClickListener { view: View ->
-            realm.executeTransaction { db: Realm ->
-                val maxId = db.where<Schedule>().max("id")
-                val nextId = (maxId?.toLong() ?: 0L) + 1
-                val schedule = db.createObject<Schedule>(nextId)
-                val date = dateEdit.text.toString().toDate("yyyy/MM/dd")
-                if (date != null) schedule.date = date
-                schedule.title = titleEdit.text.toString()
-                schedule.detail = detailEdit.text.toString()
+            when (scheduleId) {
+                -1L -> {
+                    realm.executeTransaction { db: Realm ->
+                        val maxId = db.where<Schedule>().max("id")
+                        val nextId = (maxId?.toLong() ?: 0L) + 1
+                        val schedule = db.createObject<Schedule>(nextId)
+                        val date = dateEdit.text.toString().toDate("yyyy/MM/dd")
+                        if (date != null) schedule.date = date
+                        schedule.title = titleEdit.text.toString()
+                        schedule.detail = detailEdit.text.toString()
+                    }
+                    Snackbar.make(view, "追加しました", Snackbar.LENGTH_SHORT)
+                        .setAction("戻る") { finish() }
+                        .setActionTextColor(Color.YELLOW)
+                        .show()
+                }
+                else -> {
+                    realm.executeTransaction { db: Realm ->
+                        val schedule = db.where<Schedule>()
+                            .equalTo("id", scheduleId).findFirst()
+                        val date = dateEdit.text.toString()
+                            .toDate("yyyy/MM/dd")
+                        if (date != null) schedule?.date = date
+                        schedule?.title = titleEdit.text.toString()
+                        schedule?.detail = detailEdit.text.toString()
+                    }
+                    Snackbar.make(view, "修正しました", Snackbar.LENGTH_SHORT)
+                        .setAction("戻る") { finish() }
+                        .setActionTextColor(Color.YELLOW)
+                        .show()
+                }
             }
-            Snackbar.make(view, "追加しました", Snackbar.LENGTH_SHORT)
+        }
+
+        delete.setOnClickListener { view: View ->
+            realm.executeTransaction { db: Realm ->
+                db.where<Schedule>().equalTo("id", scheduleId)
+                    ?.findFirst()
+                    ?.deleteFromRealm()
+            }
+            Snackbar.make(view, "削除しました", Snackbar.LENGTH_SHORT)
                 .setAction("戻る") { finish() }
                 .setActionTextColor(Color.YELLOW)
                 .show()

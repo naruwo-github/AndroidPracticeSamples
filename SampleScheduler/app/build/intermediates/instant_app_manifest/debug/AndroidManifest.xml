@@ -10,6 +10,7 @@
         android:targetSdkVersion="29" />
 
     <application
+        android:name="com.example.samplescheduler.SampleSchedulerApplication"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
@@ -19,6 +20,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.samplescheduler.ScheduleEditActivity" />
         <activity
             android:name="com.example.samplescheduler.MainActivity"
             android:label="@string/app_name"

@@ -11,42 +11,47 @@
 9-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml
 10
 11    <application
-11-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:5:5-22:19
-12        android:allowBackup="true"
-12-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:6:9-35
-13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.2.0] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/a3eef63a1949ce565e26a68908e433ce/core-1.2.0/AndroidManifest.xml:24:18-86
-14        android:debuggable="true"
-15        android:icon="@mipmap/ic_launcher"
-15-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:7:9-43
-16        android:label="@string/app_name"
-16-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:8:9-41
-17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:9:9-54
-18        android:supportsRtl="true"
-18-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:10:9-35
-19        android:testOnly="true"
-20        android:theme="@style/AppTheme" >
-20-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:11:9-40
-21        <activity
-21-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:12:9-21:20
-22            android:name="com.example.samplescheduler.MainActivity"
-22-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:13:13-41
-23            android:label="@string/app_name"
-23-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:14:13-45
-24            android:theme="@style/AppTheme.NoActionBar" >
-24-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:15:13-56
-25            <intent-filter>
-25-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:16:13-20:29
-26                <action android:name="android.intent.action.MAIN" />
-26-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:17:17-69
-26-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:17:25-66
-27
-28                <category android:name="android.intent.category.LAUNCHER" />
-28-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:19:17-77
-28-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:19:27-74
-29            </intent-filter>
-30        </activity>
-31    </application>
-32
-33</manifest>
+11-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:5:5-24:19
+12        android:name="com.example.samplescheduler.SampleSchedulerApplication"
+12-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:6:9-51
+13        android:allowBackup="true"
+13-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:7:9-35
+14        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+14-->[androidx.core:core:1.2.0] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/a3eef63a1949ce565e26a68908e433ce/core-1.2.0/AndroidManifest.xml:24:18-86
+15        android:debuggable="true"
+16        android:icon="@mipmap/ic_launcher"
+16-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:8:9-43
+17        android:label="@string/app_name"
+17-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:9:9-41
+18        android:roundIcon="@mipmap/ic_launcher_round"
+18-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:10:9-54
+19        android:supportsRtl="true"
+19-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:11:9-35
+20        android:testOnly="true"
+21        android:theme="@style/AppTheme" >
+21-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:12:9-40
+22        <activity android:name="com.example.samplescheduler.ScheduleEditActivity" />
+22-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:13:9-67
+22-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:13:19-55
+23        <activity
+23-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:14:9-23:20
+24            android:name="com.example.samplescheduler.MainActivity"
+24-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:15:13-41
+25            android:label="@string/app_name"
+25-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:16:13-45
+26            android:theme="@style/AppTheme.NoActionBar" >
+26-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:17:13-56
+27            <intent-filter>
+27-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:18:13-22:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:19:17-69
+28-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:19:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:21:17-77
+30-->/Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:21:27-74
+31            </intent-filter>
+32        </activity>
+33    </application>
+34
+35</manifest>

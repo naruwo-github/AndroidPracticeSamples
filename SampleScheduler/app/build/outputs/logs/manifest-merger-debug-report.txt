@@ -1,9 +1,11 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:2:1-24:12
+ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:2:1-26:12
+MERGED from [io.realm:realm-android-library:6.0.2] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/4895d8550131a090978c0eece179c95b/jetified-realm-android-library-6.0.2/AndroidManifest.xml:2:1-10:12
+MERGED from [io.realm:realm-android-kotlin-extensions:6.0.2] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/d284203f8566c684f5629305ecdffc75/jetified-realm-android-kotlin-extensions-6.0.2/AndroidManifest.xml:2:1-10:12
 MERGED from [androidx.navigation:navigation-ui-ktx:2.0.0] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/1da275d6877c987358bb7a39d0788217/navigation-ui-ktx-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-ui:2.0.0] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/e388b658abc4d182c321d4dd1c4555c4/navigation-ui-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.1.0] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/0cbb3851e4b63e68b75aa6e0a1a2998e/material-1.1.0/AndroidManifest.xml:17:1-24:12
@@ -11,6 +13,8 @@ MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/naruchan/.gradle/caches/
 MERGED from [androidx.core:core-ktx:1.2.0] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/9bb335e4785cfec91958375c7c0d4aa2/jetified-core-ktx-1.2.0/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/85fa2711bb2ad134a23924a267c31046/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.0.0] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/247e89576f35b0056de4c2cfabb4c5e5/navigation-fragment-ktx-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [io.realm:android-adapters:2.1.1] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/252f90027f83ac6a28af4c1003540816/jetified-android-adapters-2.1.1/AndroidManifest.xml:2:1-10:12
+MERGED from [com.getkeepsafe.relinker:relinker:1.3.0] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/16164ab8bdafc66378ee3961619ed580/jetified-relinker-1.3.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-runtime-ktx:2.0.0] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/cd4a6388e3c520450e6a198fa96f9dfb/navigation-runtime-ktx-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.0.0] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/1ded855597b8d68a7a16b34fb726d5d8/navigation-common-ktx-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/a8b5f2f918ccd5b61b38ba8ba7a0ef9d/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -44,25 +48,25 @@ MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/naruchan/.gradle/cach
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/0c4a303e4845c1d71d38de564f7d7815/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/490bc29f7bf8bb8ad4dea60f819b0f75/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/e968a761718dd842e4b2f47e5238a64b/print-1.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:2:1-26:12
 	package
 		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:3:5-42
 		INJECTED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml
-		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:2:1-24:12
+		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:2:1-26:12
 		INJECTED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml
-		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:2:1-24:12
+		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:2:1-26:12
 		INJECTED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:5:5-22:19
+ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:5:5-24:19
 MERGED from [com.google.android.material:material:1.1.0] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/0cbb3851e4b63e68b75aa6e0a1a2998e/material-1.1.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/0cbb3851e4b63e68b75aa6e0a1a2998e/material-1.1.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/85fa2711bb2ad134a23924a267c31046/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
@@ -74,39 +78,49 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/naru
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.2.0] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/a3eef63a1949ce565e26a68908e433ce/core-1.2.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:11:9-35
 	android:label
-		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:8:9-41
+		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:9:9-41
 	android:roundIcon
-		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:9:9-54
+		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:10:9-54
 	android:icon
-		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:7:9-43
+		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:8:9-43
 	android:allowBackup
-		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:6:9-35
+		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:7:9-35
 	android:theme
-		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:11:9-40
+		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:12:9-40
+	android:name
+		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:6:9-51
+activity#com.example.samplescheduler.ScheduleEditActivity
+ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:13:9-67
+	android:name
+		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:13:19-55
 activity#com.example.samplescheduler.MainActivity
-ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:12:9-21:20
+ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:14:9-23:20
 	android:label
-		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:14:13-45
+		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:16:13-45
 	android:theme
-		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:15:13-56
+		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:17:13-56
 	android:name
-		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:13:13-41
+		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:15:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:16:13-20:29
+ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:18:13-22:29
 action#android.intent.action.MAIN
-ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:17:17-69
+ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:19:17-69
 	android:name
-		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:17:25-66
+		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:19:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:19:17-77
+ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:21:17-77
 	android:name
-		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:19:27-74
+		ADDED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml:21:27-74
 uses-sdk
 INJECTED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml
 INJECTED from /Users/naruchan/Android_Learning/AndroidPracticeSamples/SampleScheduler/app/src/main/AndroidManifest.xml
+MERGED from [io.realm:realm-android-library:6.0.2] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/4895d8550131a090978c0eece179c95b/jetified-realm-android-library-6.0.2/AndroidManifest.xml:6:5-8:41
+MERGED from [io.realm:realm-android-library:6.0.2] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/4895d8550131a090978c0eece179c95b/jetified-realm-android-library-6.0.2/AndroidManifest.xml:6:5-8:41
+MERGED from [io.realm:realm-android-kotlin-extensions:6.0.2] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/d284203f8566c684f5629305ecdffc75/jetified-realm-android-kotlin-extensions-6.0.2/AndroidManifest.xml:6:5-8:41
+MERGED from [io.realm:realm-android-kotlin-extensions:6.0.2] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/d284203f8566c684f5629305ecdffc75/jetified-realm-android-kotlin-extensions-6.0.2/AndroidManifest.xml:6:5-8:41
 MERGED from [androidx.navigation:navigation-ui-ktx:2.0.0] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/1da275d6877c987358bb7a39d0788217/navigation-ui-ktx-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-ui-ktx:2.0.0] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/1da275d6877c987358bb7a39d0788217/navigation-ui-ktx-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-ui:2.0.0] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/e388b658abc4d182c321d4dd1c4555c4/navigation-ui-2.0.0/AndroidManifest.xml:20:5-44
@@ -121,6 +135,10 @@ MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/naruchan/.
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/85fa2711bb2ad134a23924a267c31046/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.0.0] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/247e89576f35b0056de4c2cfabb4c5e5/navigation-fragment-ktx-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.0.0] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/247e89576f35b0056de4c2cfabb4c5e5/navigation-fragment-ktx-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [io.realm:android-adapters:2.1.1] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/252f90027f83ac6a28af4c1003540816/jetified-android-adapters-2.1.1/AndroidManifest.xml:6:5-8:41
+MERGED from [io.realm:android-adapters:2.1.1] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/252f90027f83ac6a28af4c1003540816/jetified-android-adapters-2.1.1/AndroidManifest.xml:6:5-8:41
+MERGED from [com.getkeepsafe.relinker:relinker:1.3.0] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/16164ab8bdafc66378ee3961619ed580/jetified-relinker-1.3.0/AndroidManifest.xml:5:5-43
+MERGED from [com.getkeepsafe.relinker:relinker:1.3.0] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/16164ab8bdafc66378ee3961619ed580/jetified-relinker-1.3.0/AndroidManifest.xml:5:5-43
 MERGED from [androidx.navigation:navigation-runtime-ktx:2.0.0] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/cd4a6388e3c520450e6a198fa96f9dfb/navigation-runtime-ktx-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-runtime-ktx:2.0.0] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/cd4a6388e3c520450e6a198fa96f9dfb/navigation-runtime-ktx-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-common-ktx:2.0.0] /Users/naruchan/.gradle/caches/transforms-2/files-2.1/1ded855597b8d68a7a16b34fb726d5d8/navigation-common-ktx-2.0.0/AndroidManifest.xml:20:5-44

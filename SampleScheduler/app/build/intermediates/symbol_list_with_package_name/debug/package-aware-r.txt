@@ -1364,6 +1364,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_add_black_24dp
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_edit_black_24dp
@@ -1480,8 +1481,6 @@ id beginning
 id blocking
 id bottom
 id buttonPanel
-id button_first
-id button_second
 id cancel_button
 id center
 id center_horizontal
@@ -1504,14 +1503,19 @@ id coordinator
 id custom
 id customPanel
 id cut
+id dateEdit
+id dateTextView
 id date_picker_actions
 id decor_content_parent
 id default_activity_button
+id delete
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id detailEdit
+id detailText
 id dialog_button
 id dimensions
 id direct
@@ -1555,6 +1559,7 @@ id largeLabel
 id left
 id line1
 id line3
+id list
 id listMode
 id list_item
 id masked
@@ -1590,7 +1595,6 @@ id mtrl_picker_title_text
 id multiply
 id nav_controller_view_tag
 id nav_graph
-id nav_host_fragment
 id navigation_header_container
 id never
 id noScroll
@@ -1618,6 +1622,7 @@ id right
 id right_icon
 id right_side
 id rounded
+id save
 id save_non_transition_alpha
 id save_overlay_view
 id scale
@@ -1684,11 +1689,11 @@ id text_input_start_icon
 id textinput_counter
 id textinput_error
 id textinput_helper_text
-id textview_first
-id textview_second
 id time
 id title
 id titleDividerNoCustom
+id titleEdit
+id titleTextView
 id title_template
 id toolbar
 id top
@@ -1770,6 +1775,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_schedule_edit
 layout content_main
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -1787,8 +1793,6 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout fragment_first
-layout fragment_second
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -1880,6 +1884,10 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string date_textview_text
+string delete_text
+string detail_text
+string detail_text_view_text
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -1932,9 +1940,11 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string previous
+string save_text
 string search_menu_title
 string second_fragment_label
 string status_bar_notification_info_overflow
+string title_text_view_text
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

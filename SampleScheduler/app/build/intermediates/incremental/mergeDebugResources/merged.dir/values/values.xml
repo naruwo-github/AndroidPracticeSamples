@@ -790,6 +790,10 @@
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="chip_text">Chip text</string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
+    <string name="date_textview_text">"日付 : "</string>
+    <string name="delete_text">削除</string>
+    <string name="detail_text">"詳細 : "</string>
+    <string name="detail_text_view_text"/>
     <string name="error_icon_content_description">Error</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
@@ -842,9 +846,11 @@
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
     <string name="previous">Previous</string>
+    <string name="save_text">保存</string>
     <string name="search_menu_title">Search</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="title_text_view_text">"タイトル : "</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
